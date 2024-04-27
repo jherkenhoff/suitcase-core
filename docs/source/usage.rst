@@ -138,10 +138,7 @@ The :class:`~event_model.RunRouter` streamlines this process.
    from suitcase.csv import Serializer
 
    def factory(name, start_doc):
-
        serializer = Serializer('path/to/files')
-       serializer('start', start_doc)
-
        return [serializer], []
 
    rr = RunRouter([factory])
